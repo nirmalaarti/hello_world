@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:punchh="http://schemas.android.com/apk/res-auto"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            android:id="@+id/scr"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl1"
+                android:background="#FFFFFF">
+
+                <LinearLayout
+                    android:id="@+id/LoginHome_BTN_FBSignUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dip"
+                    android:layout_marginLeft="40dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dip"
+                    android:background="@drawable/fb_button"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="23dip"
+                    android:src="@drawable/f"
+                    android:visibility="invisible"></ImageView>
+
+
+                <LinearLayout
+                    android:id="@+id/llBtns"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="log in with facebook"
+                        android:textColor="#FFFFFF"/>
+
+                </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Get 10 bonus points on connecting for first time"
+                    android:id="@+id/textView2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/LoginHome_BTN_FBSignUp"
+                    android:textSize="13dp" />
+
+                <!--  Add your chail views here  -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView2"
+                    android:id="@+id/rl2"
+                    android:background="#FFFFFF">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="OR"
+                        android:id="@+id/textView3"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="15dp"
+                        android:layout_marginTop="40dp"/>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:id="@+id/editText"
+                        android:background="@drawable/rected"
+                        android:hint="Email"
+                        android:padding="15dp"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="35dp"
+                        android:layout_centerHorizontal="true"
+
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:id="@+id/editText1"
+                        android:background="@drawable/rected"
+                        android:hint="Password"
+                        android:padding="15dp"
+                        android:layout_below="@+id/editText"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="35dp"
+                        android:layout_centerHorizontal="true"
+                        />
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/ll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl2"
+                    android:orientation="horizontal"
+                    >
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button"
+                        android:layout_below="@+id/editText1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:text="Sign Up"
+                        android:background="@drawable/butdes"
+                        android:textColor="#FFFFFF"
+                        android:padding="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Sign In"
+                        android:id="@+id/textView5"
+                        android:textSize="15dp"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/button"
+                        android:textStyle="bold"
+                        android:textColor="@color/abc_background_cache_hint_selector_material_dark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Already have a account?"
+                        android:id="@+id/textView4"
+                        android:layout_marginLeft="50dp"
+
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/button"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+
